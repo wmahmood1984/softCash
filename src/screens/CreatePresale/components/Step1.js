@@ -1,7 +1,8 @@
 import React from "react";
+import { toast } from "react-hot-toast";
 import Button from "../../../components/Button";
 
-const Step1 = ({ increaseStep, decreaseStep }) => {
+const Step1 = ({ increaseStep, decreaseStep,token,setToken,name,symbol,decimals }) => {
   const list = ["BNB", "BUSD", "USDT", "USDC"];
   return (
     <div>
@@ -12,6 +13,19 @@ const Step1 = ({ increaseStep, decreaseStep }) => {
       </label>
       <input
         type="text"
+        value={token}
+        onChange={(e)=>{
+          console.log("validat",e.target.value)
+          if(e.target.value.slice(0,2)=="0x" && e.target.value.length==42){
+            setToken(e.target.value)
+          }else{
+
+            toast.error("not a valid token address")
+            
+          }
+
+        
+        }}
         className="bg-[#303D4F] flex-1 border-none outline-none focus:ring-0 block w-full rounded-md mt-1"
         placeholder="0xaD212A1549158203A23f9fC2c45053213f10AfDE"
       />
