@@ -1,7 +1,7 @@
-import avalanche from "./Img/a.png";
-import binance from "./Img/binance.png";
-import ethereum from "./Img/ethereum.png";
-import polygon from "./Img/polygon.png";
+// import avalanche from "./Img/a.png";
+// import binance from "./Img/binance.png";
+// import ethereum from "./Img/ethereum.png";
+// import polygon from "./Img/polygon.png";
 
 export const LaunchPadABI = [
 	{
@@ -1780,12 +1780,12 @@ export const BUSD = {
   80001: "0x7ef95a0FEE0Dd31b22626fA2e10Ee6A223F8a684",
 };
 
-export const logoArray = {
-  43113: avalanche,
-  97: binance,
-  5: ethereum,
-  80001: polygon,
-};
+// export const logoArray = {
+//   43113: avalanche,
+//   97: binance,
+//   5: ethereum,
+//   80001: polygon,
+// };
 
 export const chainArray = {
   43113: "Avalanche",

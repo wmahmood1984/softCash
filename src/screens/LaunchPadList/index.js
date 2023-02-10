@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Web3 from "web3";
-import { LaunchPadAbi, LaunchPadAdd, rpcObj } from "../../config";
+import { LaunchPadABI, LaunchPadAbi, LaunchPadAdd, rpcObj } from "../../config";
 import LaunchPad from "./components/LaunchPad";
 
 const LaunchPadList = () => {
@@ -27,8 +27,8 @@ const LaunchPadList = () => {
 
   
   const myContract = chainId
-    ? new web3.eth.Contract(LaunchPadAbi, LaunchPadAdd[`${chainId}`])
-    : new web3.eth.Contract(LaunchPadAbi, LaunchPadAdd[`5`]);
+    ? new web3.eth.Contract(LaunchPadABI, LaunchPadAdd[`${chainId}`])
+    : new web3.eth.Contract(LaunchPadABI, LaunchPadAdd[`5`]);
  
   useEffect(() => {
     const abc = async () => {
