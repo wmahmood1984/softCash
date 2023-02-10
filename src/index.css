@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+.gradient {
+  background-image: linear-gradient(to right, #262d51, #101634);
+}
+
+.launchpad_bg_gradient {
+  background: rgb(15, 20, 50);
+  background: -moz-linear-gradient(
+    220deg,
+    rgba(15, 20, 50, 1) 0%,
+    rgba(39, 46, 82, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    220deg,
+    rgba(15, 20, 50, 1) 0%,
+    rgba(39, 46, 82, 1) 100%
+  );
+  background: linear-gradient(
+    220deg,
+    rgba(15, 20, 50, 1) 0%,
+    rgba(39, 46, 82, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f1432",endColorstr="#272e52",GradientType=1);
+}
+
+.items {
+  animation: carouselAnim 10s linear infinite alternate;
+}
+
+@keyframes carouselAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(calc(-10% + (100px)));
+  }
+}
+.disclaimer {
+  border: 2px solid #0899e7;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+  text-align: center;
+  background: black;
+}
+
+.btn_gradient {
+  background: rgb(17, 110, 211);
+  background: -moz-linear-gradient(
+    79deg,
+    rgba(17, 110, 211, 0.9585084033613446) 0%,
+    rgba(12, 45, 98, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    79deg,
+    rgba(17, 110, 211, 0.9585084033613446) 0%,
+    rgba(12, 45, 98, 1) 100%
+  );
+  background: linear-gradient(
+    79deg,
+    rgba(17, 110, 211, 0.9585084033613446) 0%,
+    rgba(12, 45, 98, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#116ed3",endColorstr="#0c2d62",GradientType=1);
+
+  border: 1px #0996df solid;
+}
